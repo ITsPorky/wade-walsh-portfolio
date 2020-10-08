@@ -1,17 +1,14 @@
 /* ======================================== */
 /* Fonts */
 /* ======================================== */
-@font-face {
-    font-family: 'MyFont';
-    src: url('code_bold-webfont.woff2') format('woff2'),
-         url('code_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 /* ======================================== */
 /* Main CSS for Portfolio page */
 /* ======================================== */
+html{
+    scroll-behavior: Smooth;
+}
 body{
     background-color: #222;
     color: #fff;
@@ -21,7 +18,9 @@ body{
     font-family: 'MyFont', Arial, Helvetica, sans-serif;
 }
 section{
-    display: inline-block;
+    margin: auto;
+    display: block;
+    padding-bottom: 5em;
 }
 a{
     color: #fff;
@@ -132,6 +131,9 @@ hr{
 /* ================================================= */
 /* Index Page */
 /* ================================================= */
+#home{
+    padding-top: 8em;
+}
 .back-image{
     background-image: linear-gradient(to top, rgba(34,34,34,0.5), rgba(34,34,34,1)), url(../images/background.jpg);
     background-size: cover;
@@ -289,6 +291,10 @@ hr{
 /* ================================================= */
 /* About Page */
 /* ================================================= */
+#about{
+    margin: auto;
+    width: 98%;
+}
 .bar{
     width: 100%;
     background-color: #fff;
@@ -306,14 +312,20 @@ hr{
 .java{width: 75%; background-color: #00aaff;}
 .python{width: 50%; background-color: #00aaff;}
 .html{width: 75%; background-color: #00aaff;}
+.latex{width: 50%; background-color: #00aaff;}
 .css{width: 75%; background-color: #00aaff;}
 .js{width: 75%; background-color: #00aaff;}
-.react{width: 50%; background-color: #00aaff;}
+.react{width: 25%; background-color: #00aaff;}
+.php{width: 75%; background-color: #00aaff;}
 .ps{width: 75%; background-color: #00aaff;}
 .pp{width: 50%; background-color: #00aaff;}
-/* .about-title{
-    text-decoration: underline;
-} */
+.node{width: 25%; background-color: #00aaff;}
+.express{width: 50%; background-color: #00aaff;}
+.jquery{width: 50%; background-color: #00aaff;}
+.sql{width: 25%; background-color: #00aaff;}
+.about{
+    text-align: center;
+}
 @media(min-width: 900px) {
     .about-left{
         display: block;
@@ -348,7 +360,38 @@ hr{
 /* ================================================= */
 /* Contact Page for larger devices */
 /* ================================================= */
-
+.github{
+    text-decoration: none;
+    float: center;
+    width: 20%;
+    padding: 2% 5%;
+    border-style: none;
+    /* border: 1px solid #fff; */
+    border-radius: 7% 7%;
+    color: #fff;
+    background-color: #333;
+}
+@media(min-width: 900px) {
+    #contact{
+        margin: auto;
+        width: 50%;
+    }
+    .links{
+        width: 100%;
+        display: block;
+    }
+    .github{
+        margin: 0 40%;
+    }
+    .details{
+        text-align: center;
+    }
+}
+@media(max-width: 899px) {
+    .github{
+        margin: auto;
+    }
+}
 
 /* ================================================= */
 /* Footer for larger devices */
@@ -373,5 +416,43 @@ hr{
         font-size: 1em;
         text-align: center;
         color: #fff;
+    }
+}
+
+/* ================================================= */
+/* Footer for larger devices */
+/* ================================================= */
+#totop{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+.totopbtn{
+    border-radius: 15%;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    z-index: 1;
+    background-color: #000;
+}
+@media(max-width: 899px) {
+    #totop{
+        padding: 15px 20px;
+    }
+    .totopbtn{
+        width: 70px;
+        height: 70px;
+    }
+}
+@media(min-width: 900px) {
+    #totop{
+        padding: 40px 20px;
+    }
+    .totopbtn{
+        width: 100px;
+        height: 100px;
     }
 }
