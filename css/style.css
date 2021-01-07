@@ -404,6 +404,7 @@ hr{
 @media(min-width: 900px) {
     footer{
         display: block;
+        padding: 0 0 0.2em 0;
         width: 100%;
         position: relative;
         bottom: 0;
@@ -415,6 +416,7 @@ hr{
 @media(max-width: 899px) {
     footer{
         display: block;
+        padding: 0 0 0.2em 0;
         width: 100%;
         position: relative;
         bottom: 0;
