@@ -390,6 +390,9 @@ hr{
     .container{
         text-align: center;
     }
+    .github{
+        padding: 1% 4%;
+    }
 }
 @media(max-width: 899px) {
     #contact{
