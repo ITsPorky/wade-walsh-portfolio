@@ -144,7 +144,7 @@ hr{
     padding-top: 0;
 }
 .back-image{
-    background-image: linear-gradient(to top, rgba(34,34,34,0.5), rgba(34,34,34,1)), url(../images/background.jpg);
+    background-image: linear-gradient(to top, rgba(34,34,34,0.5), rgba(34,34,34,1)), url(../assets/images/background.jpg);
     background-size: cover;
     content: "";
     display: block;
@@ -450,6 +450,7 @@ hr{
 }
 @media(max-width: 899px) {
     #totop{
+        margin: auto;
         padding: 15px 20px;
     }
     .totopbtn{
@@ -459,6 +460,7 @@ hr{
 }
 @media(min-width: 900px) {
     #totop{
+        margin: auto;
         padding: 30px 20px;
     }
     .totopbtn{
